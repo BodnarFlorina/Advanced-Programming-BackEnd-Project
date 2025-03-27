@@ -33,7 +33,7 @@ public class AnswerController {
             for (Answer answer : answers) {
                 answerService.addAnswer(answer);
             }
-            return ResponseEntity.ok("Answers created successfully");
+            return ResponseEntity.ok("Answers created successfully.");
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Failed to create answers");
         }

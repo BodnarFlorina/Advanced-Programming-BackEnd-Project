@@ -46,7 +46,7 @@ public class QuestionController {
             questionService.addQuestion(question);
             return ResponseEntity.ok("Question created successfully");
         } catch (Exception e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Failed to create question");
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Failed to create question.");
         }
     }
 
